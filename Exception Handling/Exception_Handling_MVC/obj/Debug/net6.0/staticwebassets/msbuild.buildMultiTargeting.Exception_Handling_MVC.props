@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Exception_Handling_MVC.props" />
+</Project>

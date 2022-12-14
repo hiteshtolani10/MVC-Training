@@ -1,0 +1,26 @@
+﻿@model List<TblContact>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contact in Model)
+        {
+            <tr>
+                <td>@contact.Id</td>
+                <td>@contact.Name</td>
+                <td>@contact.PhoneNumber</td>
+                <td>@contact.Email</td>
+                <td>
+                    <a asp-controller="Contacts" asp-action="EditContact" asp-route-id="@contact.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

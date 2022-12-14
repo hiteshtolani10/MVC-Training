@@ -1,0 +1,22 @@
+﻿@model TblContact
+
+<h2>Edit Details for @Model.Name</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.PhoneNumber</td>
+            <td>@Model.Email</td>
+        </tr>
+    </tbody>
+</table>
